@@ -1,6 +1,6 @@
 import torch
-from .modeling_bart import BartEncoder, BartDecoder, BartModel
-from transformers import BartTokenizer
+from transformers import BartTokenizer, BartModel
+from transformers.models.bart.modeling_bart import BartEncoder, BartDecoder
 from fastNLP import seq_len_to_mask
 from fastNLP.modules import Seq2SeqEncoder, Seq2SeqDecoder, State
 import torch.nn.functional as F
